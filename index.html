@@ -1,0 +1,60 @@
+ 
+<html>
+  <head>
+    <title>3 Person Recognizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <h1>3 Person Recognizer</h1>
+    
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects (Please note that it will not identify any other person yet) : </p>
+
+      <div>
+      <span id="span">Gunja   Shresth   Ayush</span>
+      <br>
+      <span><img id="Gunja" src="Gunja.jpg"> <img id="Shresth" src="Shresth.jpg"> <img id="Ayush" src="Unknown.jpg"></span>
+    </div>
+
+      <br> <br>
+
+      <label id="webcamVIEW">Webcam View - </label>
+      <br><br>
+      <div id="camera"></div>
+      <br><br>
+      <button id="captureBTN" onclick="CAPTURE()">CAPTURE</button>
+      <br><br>
+      <div id="picture"></div>
+      <br><br>
+      <button id="checkBTN" onclick="START_CHECKING()">CHECK</button>
+      <br><br>
+      
+
+      <p id="Ject" style="font-size: 22px; color: red;">Person :  </p>
+      <p id="A" style="font-size: 22px; color: red;">Accuracy :  </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
